@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NSS VVIT - Login</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="login-body">
+    <div class="login-container">
+        <img src="https://vvit.ac.in/images/logo-w.png" alt="VVIT Logo" class="logo">
+        <h2>NSS Portal Login</h2>
+        <form id="login-form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button>
+            <p id="login-error" class="error-message"></p>
+        </form>
+        <div class="test-credentials">
+            <p><strong>Test Admin:</strong> ADMIN / ADMIN</p>
+            <p><strong>Test Student:</strong> STUD / STUD</p>
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
