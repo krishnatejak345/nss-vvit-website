@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Events - NSS VVIT</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo-text">NSS VVIT</div>
+        <ul>
+            <li><a href="index.html">About NSS</a></li>
+            <li><a href="events.html" class="active">Events</a></li>
+            <li><a href="attendance.html">Attendance</a></li>
+            <li><a href="complaints.html">Complaints</a></li>
+            <li><a href="profile.html">Profile</a></li>
+        </ul>
+        <button id="logout-btn">Logout</button>
+    </nav>
+    <main class="container">
+        <h1>Upcoming Events</h1>
+
+        <div class="admin-only card">
+            <h2>Create New Event</h2>
+            <form id="create-event-form">
+                <input type="text" id="event-name" placeholder="Event Name" required>
+                <input type="date" id="event-date" required>
+                <input type="time" id="event-time" required>
+                <input type="number" id="event-students" placeholder="No. of Students Required" required>
+                <button type="submit">Create Event</button>
+            </form>
+        </div>
+
+        <h2>Current Events List</h2>
+        <div id="event-list" class="event-grid">
+            </div>
+    </main>
+    <script src="js/app.js"></script>
+</body>
+</html>
